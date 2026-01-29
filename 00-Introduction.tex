@@ -1,0 +1,114 @@
+\documentclass[10pt]{beamer}
+
+\documentclass[svgnames,smaller]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian,french]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+    left=2.5mm,
+    right=2.5mm,
+    top=0mm,
+    bottom=0mm
+}
+\usepackage{amssymb} % pour \blackdiamond
+\usepackage{tikz}
+\usepackage{graphicx,animate}
+
+\newcommand{\replacementchar}{%
+  \tikz[baseline=-0.6ex]{
+    %\node[inner sep=0pt] (d) {\Large$\blackdiamond$};
+    \node[inner sep=0pt] (d) {\Large$\blacksquare$};
+    \node[white, font=\scriptsize\bfseries] at (d.center) {?};
+  }%
+}
+\usepackage{tabularx}
+%\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+%\addbibresource{bibliographie.bib}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{L2S4: Édition numérique\\
+TD 1: Introduction}
+
+\date{}
+\author{Marine Tiger\\  \quad {marine.tiger@sorbonne-universite.fr\\}}
+
+\institute{Littératures françaises et comparée ED19, CELLF, Sorbonne Université}
+
+\begin{document}
+\maketitle
+\setbeamertemplate{section in toc}[sections numbered]
+
+\section{Introduction}
+\begin{frame}{Introduction}
+  
+  % \tableofcontents[hideallsubsections]
+  % \section{Introduction}
+\begin{center}
+    \textbf{Littérature? Édition? Numérique?}
+\end{center}
+\end{frame}
+
+\begin{frame}{Introduction}
+\begin{block}{Exercice: Dans ma "bibliothèque" de littérature numérique...}
+\end{block}
+
+Voici quelques objets présents dans la section "littérature numérique" de ma bibliothèque. Par groupes de 2, choisissez une référence et tentez de remplir le tableau descriptif.
+
+\begin{center}
+    \includegraphics[width=.35\textwidth]{01-Introduction/Images/biblio_num.png}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}{Introduction}
+
+\begin{block}{Des problématiques transversales:}
+\end{block}
+
+\begin{itemize}
+    \item Quelles sont les compétences des auteurs et des éditeurs de ces objets ?
+    \item Où est donc passé le livre : dans la tablette, le fichier, l'application, la plateforme ?
+    \item Où est donc passé l'éditeur ? L'édition numérique est-elle une auto-édition ?
+    \item De telles oeuvres relèvent-elles encore de la littérature, ou bien d'un autre média (audiovisuel, jeu vidéo, etc.) ?
+    \item Quelle est la pérennité de ces objets numériques ?
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Introduction}
+
+\begin{block}{Édition / Livre / Littérature : Numériques?}
+\begin{itemize}
+    \item \textbf{Édition numérique} : Ensemble des acteurs, outils, protocoles propre à l'énonciation éditoriale numérique.
+    \item \textbf{Livre numérique} : désigne les différentes tentatives de remédiation du livre pour une lecture sur un support numérique.
+    \item \textbf{Littérature numérique} : désigne les créations littéraires directement inscrites dans des environnements numériques.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{L'édition numérique, "La révolution des révolutions ?"}
+\input{01-Introduction/01-Edition_numerique_revolution}
+
+\section{L'édition : une notion polysémique}
+\input{01-Introduction/02_edition_notion_polysemique}
+
+\section{L'édition: une histoire technique}
+\input{01-Introduction/03_histoire_technique}
+
+\section{Les trois fonctions éditoriales}
+\input{01-Introduction/04_fonctions_editoriales}
+
+\section{Le "numérique": une notion polysémique}
+\input{01-Introduction/05_numerique_notion}
+
+\section{Objectifs du cours}
+\input{01-Introduction/06_objectifs_cours}
+
+\end{document}
