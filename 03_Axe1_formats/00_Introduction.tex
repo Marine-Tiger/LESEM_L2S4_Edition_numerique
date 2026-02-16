@@ -1,0 +1,117 @@
+\documentclass[10pt]{beamer}
+
+\documentclass[svgnames,smaller]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian,french]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+    left=2.5mm,
+    right=2.5mm,
+    top=0mm,
+    bottom=0mm
+}
+\usepackage{amssymb} % pour \blackdiamond
+\usepackage{tikz}
+\usepackage{graphicx,animate}
+
+\newcommand{\replacementchar}{%
+  \tikz[baseline=-0.6ex]{
+    %\node[inner sep=0pt] (d) {\Large$\blackdiamond$};
+    \node[inner sep=0pt] (d) {\Large$\blacksquare$};
+    \node[white, font=\scriptsize\bfseries] at (d.center) {?};
+  }%
+}
+\usepackage{tabularx}
+%\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+%\addbibresource{bibliographie.bib}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{L2S4: Édition numérique\\
+TD 3: Choisir son format\\
+\small
+Comprendre les enjeux éditoriaux des formats numériques
+}
+
+\date{}
+\author{Marine Tiger\\  \quad {marine.tiger@sorbonne-universite.fr\\}}
+
+\institute{Littératures françaises et comparée ED19, CELLF, Sorbonne Université}
+
+\begin{document}
+\maketitle
+\setbeamertemplate{section in toc}[sections numbered]
+
+\section{Introduction}
+\begin{frame}{Rappel: expérience de Goldsmith}
+     \centering
+    \includegraphics[width=.80\textwidth]{02_Axe1_histoire_outils_informatiques/Images/clair_obscur.jpg}
+\end{frame}
+
+\begin{frame}{Rappel: expérience de Goldsmith}
+     \centering
+    \includegraphics[width=12cm]{02_Axe1_histoire_outils_informatiques/Images/code_img.png}
+    
+    \includegraphics[width=12cm]{02_Axe1_histoire_outils_informatiques/Images/code_img_modif.png}
+\end{frame}
+
+\begin{frame}{Rappel: expérience de Goldsmith}
+     \centering
+    \includegraphics[width=.80\textwidth]{02_Axe1_histoire_outils_informatiques/Images/after_modif.png} 
+\end{frame}
+
+\begin{frame}{Quelques enseignements}
+    \begin{itemize}
+        \item Tout les contenus numériques sont, par nature, \textbf{encodés} ;
+        \item Pour pouvoir être lus, partagés, ces contenus sont structurés selon des \textbf{standards} : les formats ;
+        \item Invisibles à l'usager.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exemples de formats}
+\begin{block}{}
+    \centering
+    .pdf, .epub, .docx, .odt, .page, .azw etc...   
+\end{block}
+ \vspace{5mm} %5mm vertical space
+\textbf{ \textrightarrow{} Quelles possibilités d'action peuvent-elles avoir sur les contenus?}
+
+
+\end{frame}
+
+\begin{frame}{Possibilités d'action sur les contenus}
+    \begin{itemize}
+        \item Certains sont \textbf{éditables} (docx, odt, doc, etc.) \textrightarrow{} permet de les \textbf{manipuler} (écrire, récrire, etc.);
+        \item Certains garantissent une "\textbf{stabilisation}" du texte (PDF) \textrightarrow{} donne un statut plus proche du "livre" (enjeux de clôture et de stabilisation);
+        \item Certains sont étroitement \textbf{associés à des environnements techniques} \textrightarrow{} un fichier pages ne peut être ouvert que sur un Mac.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Définitions de format}
+    \begin{block}{}
+    \centering
+    {\small
+    \textit{Dérivée de forme, la notion de format (formato) désigne à l’origine les « dimensions du papier », puis en est venue à prendre le sens de « mesure » et de « dimension ». Le format permet de cadrer et d’écarter des formes potentielles. Le format ne donc doit pas être seulement envisagé comme simple véhicule, ensemble de dimensions ou normes techniques: il s’agit de le considérer comme matrice, médiateur, cadre opératoire (Brulé & Masure 2015), ou « condition de possibilité » (Huyghe 2015).}}\\
+        \textbf{Anthony Masure et Alexandre Saint-Jevin, "\textit{Formes, formats, formatage : vers un design des sciences}", \textit{Les devenirs numériques des patrimoines}, 2022.}
+    \end{block}
+\end{frame}
+
+\section{L'édition numérique : une question de forme et de formats}
+\input{03_Axe1_formats/01_forme_et_formats}
+
+\section{Enjeux esthétiques et de manipulabilité : la forme livre en
+question}
+\input{03_Axe1_formats/02_esthetiques_manipulabilite}
+
+\section{Enjeux d’intéropérabilité et d’ouverture : le formatage de l’édition en question}
+\input{03_Axe1_formats/03_interoperabilite_ouverture}
+
+\section{Enjeux de pérennité des formats : que restera-t-il de la littérature numérique ?}
+\input{03_Axe1_formats/04_perennite_formats}
+
+\end{document}
