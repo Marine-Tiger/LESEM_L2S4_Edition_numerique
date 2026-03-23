@@ -1,0 +1,142 @@
+\documentclass[10pt]{beamer}
+
+\documentclass[svgnames,smaller]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian,french]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+    left=2.5mm,
+    right=2.5mm,
+    top=0mm,
+    bottom=0mm
+}
+\usepackage{amssymb} % pour \blackdiamond
+\usepackage{tikz}
+\usepackage{graphicx,animate}
+
+\newcommand{\replacementchar}{%
+  \tikz[baseline=-0.6ex]{
+    %\node[inner sep=0pt] (d) {\Large$\blackdiamond$};
+    \node[inner sep=0pt] (d) {\Large$\blacksquare$};
+    \node[white, font=\scriptsize\bfseries] at (d.center) {?};
+  }%
+}
+\usepackage{tabularx}
+%\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+%\addbibresource{bibliographie.bib}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{L2S4: Édition numérique\\
+TD 4: Modéliser et automatiser l'écriture\\
+\small
+De la combinatoire aux LLM et IAG
+}
+
+\date{}
+\author{Marine Tiger\\  \quad {marine.tiger@sorbonne-universite.fr\\}}
+
+\institute{Littératures françaises et comparée ED19, CELLF, Sorbonne Université}
+
+\begin{document}
+\maketitle
+\setbeamertemplate{section in toc}[sections numbered]
+
+\section{Introduction}
+
+\begin{frame}{Problématique esthétique: statut de l'auteur et imaginaire de la création}
+    \begin{itemize}
+    \item La création renvoie à l'inspiration, à la sacralisation de l'artiste.
+    \item L'auteur = un être "inspiré", de "génie" ou qui maîtrise une technique.
+\end{itemize}
+\centering
+
+\includegraphics[width=0.50\textwidth]{04_Axe1_IAG/Images/prompt.png}\hspace{10mm}
+\includegraphics[width=0.40\textwidth]{04_Axe1_IAG/Images/SiROmeNavaitPasChute.png}
+
+\end{frame}
+
+\begin{frame}{Problématique esthétique: statut de l'auteur et imaginaire de la création}
+    \begin{block}{}
+        \textbf{Principe de "modélisation":} Décomposition d'un objectif en plusieurs étapes, scénarios possibles, afin de produire un programme fonctionnel.\\
+        Exemple des applications de rencontre.
+    \end{block}
+    \begin{block}{Cela implique:}
+        \begin{itemize}
+            \item Un travail conceptuel majeur \textrightarrow{} comprendre les phénomènes pour pouvoir les décrire et décomposer étape par étape;
+            \item Un travail forcément biaisé \textrightarrow{} tenter d'objectivité un phénomène.
+        \end{itemize}
+    \end{block}
+
+\begin{block}{}
+Système probabiliste = réponse basée sur la probabilité de la réponse.
+   
+\end{block}
+\end{frame}
+
+\begin{frame}{La problématique sociale : automatiser/remplacer les métiers (auteurs, éditeurs)}
+\begin{columns}[T,onlytextwidth]
+\column{0.50\linewidth}
+\small
+Dans le secteur éditorial, des tâches spécifiques sont aujourd'hui menacées :
+\begin{itemize}
+    \item la traduction
+    \item la révision ortho-typo
+    \item la mise en page
+\end{itemize}
+
+\column{0.50\linewidth}
+\includegraphics[width=0.80\textwidth]{04_Axe1_IAG/Images/IA-traducteurs.png}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Modélisation et automatisation : deux caractéristiques de l'édition}
+\begin{block}{Pour rappel, l'histoire de l'édition c'est:}
+    \begin{itemize}
+    \item La formalisation des normes et des standard éditoriaux ;
+    \item Les techniques d'automatisation
+\end{itemize}
+\textrightarrow{} Structurent les métiers de l'édition et l'ensemble de la chaîne de production des ouvrages.
+\end{block}
+
+\begin{block}{Une modélisation de l'édition = chaîne éditoriale}
+    \begin{itemize}
+        \item Quelles sont les étapes pour produire un livre ?
+        \item À quoi un livre doit-il ressemble (règles de présentation, de mise en forme) ?
+    \end{itemize}
+    Exemple: la classification Dewey/CDU.
+\end{block}
+\end{frame}
+
+\begin{frame}{La problématique socio-technique}
+\begin{itemize}
+    \item Coût environnemental
+    \item Coût social, sociétal
+    \item Coût politique, éthique
+\end{itemize}
+\end{frame}
+
+\section{Un débat de société face à un changement paradigmatique majeur}
+\input{04_Axe1_IAG/01_debat_societe}
+
+\section{Les intelligences artificielles : 70 ans d'histoire}
+\input{04_Axe1_IAG/02_histoire_IA}
+
+\section{La problématique des outils fondés sur les IAG}
+\input{04_Axe1_IAG/03_problematique_outils}
+
+\section{Les industries éditoriales et littéraires}
+\input{04_Axe1_IAG/05_industries_litteraires}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+\centering
+Au-delà des effets de fascination - largement influencés par notre imaginaire fictionnel de la machine - nous commençons tout juste à prendre la mesure des effets de l'IA sur la création, la créativité, et les conditions de travail dans les industries culturelles. Si tout le monde s'accorde sur le besoin de réguler, les leviers à (dés)activer font largement débat. Assistant ou remplaçant, l'outil d'IA doit en tous les cas être bien compris et transparent afin que d'en faire un usage bien conscient. Le véritable coût économique, social et écologique de la dernière génération d'IA reste encore inconnu, et l'on peut justement s'interroger sur les développements futur de cette technologie : un autre hiver de l'IA est-il à prévoir ? Ou sommes-nous définitivement entrés dans un changement de paradigme ?
+    
+\end{frame}
+\end{document}

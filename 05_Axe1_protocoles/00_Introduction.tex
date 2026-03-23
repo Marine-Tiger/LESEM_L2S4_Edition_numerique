@@ -1,0 +1,75 @@
+\documentclass[svgnames,smaller,10pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+    left=2.5mm,
+    right=2.5mm,
+    top=0mm,
+    bottom=0mm
+}
+\usepackage{amssymb} % pour \blackdiamond
+\usepackage{tikz}
+\usepackage{graphicx,animate}
+
+\newcommand{\replacementchar}{%
+  \tikz[baseline=-0.6ex]{
+    %\node[inner sep=0pt] (d) {\Large$\blackdiamond$};
+    \node[inner sep=0pt] (d) {\Large$\blacksquare$};
+    \node[white, font=\scriptsize\bfseries] at (d.center) {?};
+  }%
+}
+\usepackage{tabularx}
+%\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+%\addbibresource{bibliographie.bib}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{L2S4: Édition numérique\\
+TD 5: Publier sur le Web\\
+\small
+Renouveler les protocoles éditoriaux
+}
+
+\date{}
+\author{Marine Tiger\\  \quad {marine.tiger@sorbonne-universite.fr\\}}
+
+\institute{Littératures françaises et comparée ED19, CELLF, Sorbonne Université}
+
+\begin{document}
+\maketitle
+\setbeamertemplate{section in toc}[sections numbered]
+
+\section{Introduction}
+
+\begin{frame}[c]{Introduction}
+\begin{block}{De l'édition à l'\textit{éditorialisation} : comprendre ce que les technologies de l'Internet et du Web font à l'édition (et vice versa).}
+    
+\end{block}
+
+\begin{itemize}
+    \item Les modes de production (technologies? Langages informatiques?)?
+    \item Les modes de diffusion?
+    \item Les modes de légitimation?
+    
+\end{itemize}
+
+\end{frame}
+
+\section{Le protocole éditorial}
+\include{05_Axe1_protocoles/01_protocole_editorial}
+
+\section{Les protocoles informatiques}
+\include{05_Axe1_protocoles/02_protocole_informatique}
+
+\section{Comment ces utopies du Web ont-elles bouleversé nos protocoles éditoriaux ? Exemple avec Wikipédia}
+\include{05_Axe1_protocoles/03_exemple_wikipedia}
+
+\section{Le protocole éditorial du CMS Wiki}
+\include{05_Axe1_protocoles/04_protocole_wiki}
+\end{document}
