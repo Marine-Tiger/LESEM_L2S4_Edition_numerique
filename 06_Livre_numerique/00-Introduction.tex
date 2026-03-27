@@ -1,0 +1,141 @@
+\documentclass[svgnames,smaller,10pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,          
+    psdextra=true,         % Aide à mieux interpréter certains symboles
+    pdfencoding=auto,
+}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+    left=2.5mm,
+    right=2.5mm,
+    top=0mm,
+    bottom=0mm
+}
+\usepackage{amssymb} % pour \blackdiamond
+\usepackage{tikz}
+\usepackage{graphicx,animate}
+\usepackage{subcaption}
+
+
+\newcommand{\replacementchar}{%
+  \tikz[baseline=-0.6ex]{
+    %\node[inner sep=0pt] (d) {\Large$\blackdiamond$};
+    \node[inner sep=0pt] (d) {\Large$\blacksquare$};
+    \node[white, font=\scriptsize\bfseries] at (d.center) {?};
+  }%
+}
+\usepackage{tabularx}
+%\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+%\addbibresource{bibliographie.bib}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{L2S4: Édition numérique\\
+TD 6: Repenser nos dispositifs de lecture : le design du livre numérique
+\\
+\small
+Modèles homothétiques, livres "augmentés", livre-objets, livres-applis
+}
+
+\date{}
+\author{Marine Tiger\\   \texttt{marine.tiger@sorbonne-universite.fr}}
+
+\institute{Littératures françaises et comparée ED19, CELLF, Sorbonne Université}
+
+\begin{document}
+\maketitle
+\setbeamertemplate{section in toc}[sections numbered]
+
+\section{Introduction}
+
+\begin{frame}{Introduction}
+\begin{block}{Objectif de ce cours}
+    \vspace{1em}
+    Avec le livre numérique, plusieurs questions sont apparues:
+    \begin{itemize}
+        \item Est-ce que nous allons assister à la "fin" de l'objet livre?
+        \item Le livre est-il menacé par un nouveau média ?
+    \end{itemize}
+    
+    La réponse: non, on parle plutôt de remédiation.\\
+
+    Nous allons questionner la remédiation du livre.
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Introduction}
+    
+    Nouveaux appareils numériques (téléphone, tablette tactile) investis par le livre qui l'éloignent de sa forme canonique: le papier. \\
+
+    \textbf{Exemple:} \href{https://cours-edition-litterature-numerique-l2-92cac3.gitpages.huma-num.fr/img/phallainaChap1.mp4}{Phalaina}, de Marietta Ren (ancienne étudiante des Gobelins). \\
+
+    Dépendance à la machine de lecture de plus en plus forte.
+\end{frame}
+
+\begin{frame}{Un livre numérique est-il encore un livre ?}
+    \begin{itemize}
+        \item  \textbf{Des mutations esthétiques}\\
+        \vspace{1em}
+        \textbf{Oeuvre hypermédiatique} = un ensemble de pratiques artistiques intégrant un principe associatif entre des images, du texte et du son dans une interface de type écran.
+        \vspace{1em}
+        \item \textbf{Question de l'accessibilité et de la lisibilté du livre} \\
+        \vspace{1em}
+        \textrightarrow{} Changement de format: problèmes de développement, d'interopérabilité, manipulabilité etc\dots\\
+        \textrightarrow{} Enjeu de la machine: sur quel appareil? Coût?\\
+        \textrightarrow{} Comment penser le stockage de ces ouvrages?
+    \end{itemize}
+
+    
+\end{frame}
+
+\begin{frame}{La fin du livre, sans cesse annoncée, sans cesse repoussée}
+    Comprendre les raisons de cet "échec":
+\begin{itemize}
+    \item pas de "grand remplacement"
+    \item une cohabitation
+\end{itemize}
+
+\textrightarrow{} Le livre a résisté à de nombreuses révolutions médiatiques (phonographe, cinéma, télévision et les médias numériques).
+
+Le cours d'aujourd'hui se déroulera en deux temps:
+\begin{itemize}
+    \item Présentation des enjeux de la transition numérique du livre
+    \item Comment le livre imprimé traditionnel est reconfiguré au contact d'autres réalités médiatiques
+\end{itemize}
+
+\end{frame}
+
+
+\section{La fin des livres (?)}
+\include{01-livre_nume}
+
+\section{Le livre numérique : une "révolution" qui se fait attendre}
+\include{02-une_revolution_attendue}
+
+\section{Les médias numériques : une problématique de la remédiation}
+\include{03-medias_num}
+
+\section{Le livre homothétique}
+\include{04-livre_homothetique}
+
+\section{Le livre enrichi ou augmenté}
+\include{05-livre_enrichi}
+
+\section{Le livre hypermédiatique}
+\include{06-livre_hypermédiatique}
+
+\section{La lecture à l'écran va-t-elle transformer nos gestes de lecture ?}
+\include{07-gestes_lecture}
+
+\section{Conclusion}
+\include{08-conclusion}
+\end{document}
