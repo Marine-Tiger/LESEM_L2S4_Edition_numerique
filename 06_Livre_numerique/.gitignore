@@ -1,0 +1,18 @@
+# Fichiers auxiliaires principaux
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Bibliographie
+*.bbl
+*.blg
+
+# Index
+*.idx
+*.ind
+*.ilg
+
+# Le PDF final (optionnel : certains préfèrent le garder, d'autres non)
+*.pdf
