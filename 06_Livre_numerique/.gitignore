@@ -1,18 +1,17 @@
-# Fichiers auxiliaires principaux
+# Fichiers auxiliaires LaTeX
 *.aux
 *.log
 *.out
 *.toc
 *.synctex.gz
-
-# Bibliographie
+*.fdb_latexmk
+*.fls
+*.maf
+*.mtc*
 *.bbl
 *.blg
+*.lof
+*.lot
 
-# Index
-*.idx
-*.ind
-*.ilg
-
-# Le PDF final (optionnel : certains préfèrent le garder, d'autres non)
-*.pdf
+# Fichiers spécifiques à VS Code
+.vscode/
