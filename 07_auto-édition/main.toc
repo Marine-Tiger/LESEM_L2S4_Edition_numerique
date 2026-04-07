@@ -1,0 +1,7 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Auto-édition: de quoi parle-t-on?}{7}{0}{2}
+\beamer@sectionintoc {3}{Une édition sans éditeurs-rices ?}{23}{0}{3}
+\beamer@sectionintoc {4}{La désintermédiation et l'informatisation}{30}{0}{4}
+\beamer@sectionintoc {5}{Éditeur : un métier en voie de disparition ?}{35}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{42}{0}{6}

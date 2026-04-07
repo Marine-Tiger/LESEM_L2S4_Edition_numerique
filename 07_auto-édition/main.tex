@@ -1,0 +1,82 @@
+\documentclass[svgnames,smaller,10pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,          
+    psdextra=true,         % Aide à mieux interpréter certains symboles
+    pdfencoding=auto,
+}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+    left=2.5mm,
+    right=2.5mm,
+    top=0mm,
+    bottom=0mm
+}
+\usepackage{amssymb} % pour \blackdiamond
+\usepackage{tikz}
+\usepackage{graphicx,animate}
+\usepackage{subcaption}
+
+
+\newcommand{\replacementchar}{%
+  \tikz[baseline=-0.6ex]{
+    %\node[inner sep=0pt] (d) {\Large$\blackdiamond$};
+    \node[inner sep=0pt] (d) {\Large$\blacksquare$};
+    \node[white, font=\scriptsize\bfseries] at (d.center) {?};
+  }%
+}
+\usepackage{tabularx}
+%\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+%\addbibresource{bibliographie.bib}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{L2S4: Édition numérique\\
+TD 7: A-t-on encore besoin des éditeurs-rices à l'heure de l'édition numérique ?
+\\
+\small
+Auto-édition, désintermédiation et réintermédiation
+}
+
+\date{}
+\author{Marine Tiger\\   \texttt{marine.tiger@sorbonne-universite.fr}}
+
+\institute{Littératures françaises et comparée ED19, CELLF, Sorbonne Université}
+
+\begin{document}
+\maketitle
+\setbeamertemplate{section in toc}[sections numbered]
+
+\section{Introduction}
+\include{sections/00-introduction}
+
+\section{Auto-édition: de quoi parle-t-on?}
+\include{sections/01-definitions}
+
+\section{Une édition sans éditeurs-rices ?}
+\include{sections/02-edition_sans_editeurs}
+
+\section{La désintermédiation et l'informatisation}
+\include{sections/03-desintermediation_informatisation}
+
+\section{Éditeur : un métier en voie de disparition ?}
+\include{sections/04-editeur_disparition}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+  Auto-édition est une pratique ancienne encouragée par certains éditeurs comme Grasset sur \textbf{le principe d'édition à compte d'auteur}.\\
+  \textrightarrow{} Entreprises d'auto-édition aujourd'hui portées par des grands noms (Sattouf, Dicker, etc.) concurrencent les maisons d'édition traditionnelles.\\
+  \vspace{1em} 
+  Une des raisons: \textbf{tensions entre les éditeurs et les auteurs}. Mais attention aux pratiques risquées, portées par des amateurs et jeunes auteurs ou auteurs précaires.\\ 
+  \vspace{1em}
+  L'auto-édition s'inscrit dans un contexte culturel marqué par un principe de \textbf{désintermédiation} \textrightarrow{} une des principales conséquence est \textbf{la redéfinition de l'autorité des éditeurs}.\\ 
+  \vspace{1em}
+  Mais l'auto-édition est-elle vraiment synonyme d'émancipation de l'auteur ? Le développement d'un nouveau monopole éditorial basé sur les services numériques (GAFAM), donne lieu à une réintermédiation dont il faut mesurer les effets.
+\end{frame}
+\end{document}
