@@ -1,0 +1,81 @@
+\documentclass[svgnames,smaller,10pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,          
+    psdextra=true,         % Aide à mieux interpréter certains symboles
+    pdfencoding=auto,
+}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+    left=2.5mm,
+    right=2.5mm,
+    top=0mm,
+    bottom=0mm
+}
+\usepackage{amssymb} % pour \blackdiamond
+\usepackage{tikz}
+\usepackage{graphicx,animate}
+\usepackage{subcaption}
+
+
+\newcommand{\replacementchar}{%
+  \tikz[baseline=-0.6ex]{
+    %\node[inner sep=0pt] (d) {\Large$\blackdiamond$};
+    \node[inner sep=0pt] (d) {\Large$\blacksquare$};
+    \node[white, font=\scriptsize\bfseries] at (d.center) {?};
+  }%
+}
+\usepackage{tabularx}
+%\usepackage[style=alphabetic,citestyle=authoryear]{biblatex}
+%\addbibresource{bibliographie.bib}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{L2S4: Édition numérique\\
+TD 8: Les écritures profilaires : récits de soi et identités numériques
+}
+
+\date{}
+\author{Marine Tiger\\   \texttt{marine.tiger@sorbonne-universite.fr}}
+
+\institute{Littératures françaises et comparée ED19, CELLF, Sorbonne Université}
+
+\begin{document}
+\maketitle
+\setbeamertemplate{section in toc}[sections numbered]
+
+\section{Introduction}
+\include{Sections/00-Introduction}
+
+\section{Évolution des outils d'écriture de soi numériques}
+\include{Sections/01-outils_ecritures_num}
+
+\section{Les écritures de soi sur les réseaux sociaux : vers une écriture profilaire}
+\include{Sections/02-vers_ecriture_profilaire}
+
+\section{Une écriture des données : le sujet quantifié (vs qualifié)}
+\include{Sections/03-sujet_quantifie}
+
+\section{Le détournement des plateformes ou les médias "tactiques"}
+\include{Sections/04-detournement-plateformes}
+
+\section{Le profil d'auteur : de la pratique poétique à la stratégie (auto)promotionnelle}
+\include{Sections/05-profil_auteur}
+
+\section{La place de la lectrice/du lecteur dans les écritures profilaires}
+\include{Sections/06-place_lecteur}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+  Le profil apparaît comme une forme de production identitaire majeure à l'époque des nouvelles médiations numériques\\
+  \textrightarrow{} témoigne de la fusion qui s'opère entre la personne et l'outil-logiciel, la plateforme numérique, le réseau, ou même ce que l'on voudrait qualifier de "représentation" numérique du sujet.\\
+  \vspace{1em}
+  L'écriture profilaire (qui consiste à jouer des contraintes des plateformes et des algorithmes)= excellente stratégie de construction identitaire numérique.
+\end{frame}
+\end{document}

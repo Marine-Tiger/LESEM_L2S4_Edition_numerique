@@ -1,0 +1,9 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Évolution des outils d'écriture de soi numériques}{6}{0}{2}
+\beamer@sectionintoc {3}{Les écritures de soi sur les réseaux sociaux : vers une écriture profilaire}{13}{0}{3}
+\beamer@sectionintoc {4}{Une écriture des données : le sujet quantifié (vs qualifié)}{18}{0}{4}
+\beamer@sectionintoc {5}{Le détournement des plateformes ou les médias "tactiques"}{23}{0}{5}
+\beamer@sectionintoc {6}{Le profil d'auteur : de la pratique poétique à la stratégie (auto)promotionnelle}{29}{0}{6}
+\beamer@sectionintoc {7}{La place de la lectrice/du lecteur dans les écritures profilaires}{40}{0}{7}
+\beamer@sectionintoc {8}{Conclusion}{47}{0}{8}
