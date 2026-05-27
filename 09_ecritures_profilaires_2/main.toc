@@ -1,0 +1,8 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Atelier: créer un profil et publier}{2}{0}{1}
+\beamer@sectionintoc {2}{Introduction}{4}{0}{2}
+\beamer@sectionintoc {3}{Architexte et computexte}{8}{0}{3}
+\beamer@sectionintoc {4}{Optimiser ses publications}{15}{0}{4}
+\beamer@sectionintoc {5}{Les contraintes normatives et algorithmiques: exemple du \textit {shadow banning}}{20}{0}{5}
+\beamer@sectionintoc {6}{Contourner les règles: \textit {algospeak} et crypto-langages}{34}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{38}{0}{7}
